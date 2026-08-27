@@ -1,0 +1,9 @@
+name: Racing Telemetry Workshop
+description: Build a racing steering wheel with edge AI motion classification, live telemetry, and LED dashboard feedback using Modulino Movement and Buttons.
+ports: []
+bricks:
+- arduino:web_ui: {}
+- arduino:motion_detection:
+    variables:
+      EI_MOTION_DETECTION_MODEL: /home/arduino/.arduino-bricks/ei-models/f1-wheel-model.eim
+icon: 🏎️

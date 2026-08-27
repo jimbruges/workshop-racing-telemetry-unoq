@@ -1,0 +1,23 @@
+services:
+  ei-motion-detection-runner:
+    user: 1000:1000
+    group_add:
+    - 44
+    - 29
+    - 991
+    - 20
+    - 1001
+    labels:
+      cc.arduino.app: "true"
+      cc.arduino.app.path: /home/arduino/ArduinoApps/f1-wheel
+    environment:
+      APP_HOME: /home/arduino/ArduinoApps/f1-wheel
+      BIND_ADDRESS: 127.0.0.1
+      BOARD_NAME: unoq
+      CUSTOM_MODEL_PATH: /home/arduino/.arduino-bricks/ei-models
+      EI_MOTION_DETECTION_MODEL: /home/arduino/.arduino-bricks/ei-models/f1-wheel-model.eim
+      F1_WHEEL_ANGLE_INVERT: "1"
+      F1_WHEEL_ANGLE_OFFSET_DEG: "21"
+      HOST_IP: 192.168.50.243
+      MODELS_PATH: /var/lib/arduino-app-cli/models
+      XDG_RUNTIME_DIR: /run/user/1000
