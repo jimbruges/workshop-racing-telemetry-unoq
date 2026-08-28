@@ -5,5 +5,5 @@ bricks:
 - arduino:web_ui: {}
 - arduino:motion_detection:
     variables:
-      EI_MOTION_DETECTION_MODEL: /home/arduino/.arduino-bricks/ei-models/f1-wheel-model.eim
+  EI_MOTION_DETECTION_MODEL: python/mission-44-workshop-linux-aarch64-v2-impulse-#1.eim
 icon: 🏎️

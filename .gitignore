@@ -1,0 +1,20 @@
+# Arduino App build/cache output
+.cache/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Local runtime state (device-specific calibration)
+python/runtime_config.json
+
+# Editor/OS noise
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
