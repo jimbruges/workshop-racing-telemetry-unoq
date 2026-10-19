@@ -5,9 +5,6 @@
 __pycache__/
 *.py[cod]
 
-# Local runtime state (device-specific calibration)
-python/runtime_config.json
-
 # Editor/OS noise
 *.swp
 *.swo
