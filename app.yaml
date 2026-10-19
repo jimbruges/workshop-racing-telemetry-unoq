@@ -3,8 +3,10 @@ description: Build a racing steering wheel with edge AI motion classification, l
 ports: []
 bricks:
 - arduino:web_ui: {}
+# The bundled model is python/model.eim. To use your own Edge Impulse model,
+# replace that file with your UNO Q deployment renamed to model.eim (see README).
 - arduino:motion_detection:
     variables:
       CUSTOM_MODEL_PATH: "/home/arduino/ArduinoApps/workshop-racing-telemetry-unoq/python"
-      EI_MOTION_DETECTION_MODEL: "/home/arduino/ArduinoApps/workshop-racing-telemetry-unoq/python/mission-44-workshop-linux-aarch64-v2-impulse-#1.eim"
+      EI_MOTION_DETECTION_MODEL: "/home/arduino/ArduinoApps/workshop-racing-telemetry-unoq/python/model.eim"
 icon: 🏎️
